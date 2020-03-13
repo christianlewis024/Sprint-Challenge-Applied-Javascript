@@ -39,7 +39,7 @@ Edit this document to include your answers after each question. Make sure to lea
 4. Why would we convert a NodeList into an Array?
    Nodelist doesnt give you full access, need to convert it to an array for full access.
 5. What is a component?
-   Code that is easily reusable. Components can also be broken down to smaller components, or you could look at it more broadly too.
+   Code that is easily reusable. Components can also be broken down to smaller components, or you could look at it more broadly too. Like a piston in an engine!
 
 ### Git Set up
 
