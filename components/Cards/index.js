@@ -21,7 +21,7 @@
 const card = document.querySelector(".cards-container");
 
 function NewArticle(article) {
-  // create elements
+  // create elements it!
   const newCard = document.createElement("div"),
     headline = document.createElement("div"),
     authorDiv = document.createElement("div"),
@@ -29,18 +29,18 @@ function NewArticle(article) {
     img = document.createElement("img"),
     name = document.createElement("span");
 
-  // add classes
+  // add classes it!
   newCard.classList.add("card");
   headline.classList.add("headline");
   authorDiv.classList.add("author");
   imgDiv.classList.add("img-container");
 
-  // text content
+  // text content it!
   name.textContent = `${article.authorName}`;
   headline.textContent = `${article.headline}`;
   img.src = `${article.authorPhoto}`;
 
-  // append
+  // append it!
 
   newCard.append(headline);
   newCard.append(authorDiv);
@@ -48,7 +48,7 @@ function NewArticle(article) {
   authorDiv.append(imgDiv);
   imgDiv.append(img);
 
-  //  return it
+  //   now return it
 
   return newCard;
 }
