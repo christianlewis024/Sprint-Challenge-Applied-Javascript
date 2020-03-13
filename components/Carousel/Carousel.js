@@ -17,3 +17,54 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+// setup images to pull them all into carousel //
+// setup images to pull them all into carousel //
+// setup images to pull them all into carousel //
+const allImages = [
+  "/../assets/carousel/computer.jpeg",
+  "/../assets/carousel/mountains.jpeg",
+  "/../assets/carousel/trees.jpeg",
+  "/../assets/carousel/turntable.jpeg"
+];
+// start the index  //
+
+let index = 0;
+
+// add html like previous components
+
+function CarouselComponent() {
+  //  create it!
+
+  const theCarousel = document.createElement("div"),
+    leftButton = document.createElement("div"),
+    rightButton = document.createElement("div"),
+    img = document.createElement("img");
+
+  // add class it!
+
+  theCarousel.classList.add("carousel");
+  leftButton.classList.add("left-button");
+  leftButton.classList.add("button");
+  rightButton.classList.add("right-button");
+  rightButton.classList.add("button");
+  img.classList.add("image");
+  //  append it !
+
+  theCarousel.append(leftButton);
+  theCarousel.append(rightButton);
+  theCarousel.append(img);
+
+  // no text but image needs to be filled in
+
+  img.src = allImages[index];
+
+  // return it all
+
+  return theCarousel;
+}
+
+// make the query selector
+
+const addTheCarousel = document.querySelector(".carousel-container");
+addTheCarousel.appendChild(CarouselComponent());
